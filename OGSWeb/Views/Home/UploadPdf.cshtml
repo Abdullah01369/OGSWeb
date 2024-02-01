@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "UploadPdf";
+}
+
+<h1>PDF Yükle</h1>
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadPdf">
+    <div class="form-group">
+        <label for="pdfFile">PDF Dosyası Seçin:</label>
+        <input type="file" name="pdfFile" id="pdfFile" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Yükle</button>
+</form>
